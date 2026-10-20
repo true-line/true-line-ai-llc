@@ -117,8 +117,8 @@ function Index() {
           </p>
           <article className="mt-10 rounded-lg border border-border bg-card p-8">
             <div className="flex flex-wrap items-center gap-3">
-              <span className="rounded-full bg-secondary px-2.5 py-0.5 font-mono text-[11px] text-muted-foreground">Draft v0.2</span>
-              <p className="text-xs text-muted-foreground"><time dateTime="2026-10-20">October 20, 2026</time> · 38 pages · PDF</p>
+              <span className="rounded-full bg-secondary px-2.5 py-0.5 font-mono text-[11px] text-muted-foreground">Draft v0.3</span>
+              <p className="text-xs text-muted-foreground"><time dateTime="2026-10-20">October 20, 2026</time> · 42 pages · PDF</p>
             </div>
             <h3 className="mt-5 font-display text-xl font-semibold">Native Shareable Soul Packages</h3>
             <p className="mt-2 text-sm font-medium">A persistent environment for agent identity work and learning</p>
@@ -126,14 +126,14 @@ function Index() {
               A proposed .soul package format for preserving an AI agent’s identity, knowledge, tools, and ongoing work across harnesses and inference providers. Covers portable agent environments, accumulated learning, and explicit operations for backup, transfer, and sharing.
             </p>
             <p className="mt-3 max-w-2xl text-sm text-muted-foreground">
-              Version 0.2 adds a threat model, rules for self-modification, broker trust assumptions, and consistency corrections.
+              Version 0.3 clarifies approval and isolation rules, preserves mixed-source provenance, strengthens quarantine and recovery checks, and adds a worked package example with verified hashes.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
-              <a href="/whitepapers/native-shareable-soul-packages-v0-2.pdf" target="_blank" rel="noopener noreferrer" className="rounded-md bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground hover:opacity-90">Read whitepaper <span className="sr-only">(Draft v0.2 PDF, opens in a new tab)</span>↗</a>
-              <a href="/whitepapers/native-shareable-soul-packages-v0-2.pdf" download className="rounded-md border border-border px-5 py-3 text-sm font-semibold hover:bg-secondary">Download PDF</a>
+              <a href="/whitepapers/native-shareable-soul-packages-v0-3.pdf" target="_blank" rel="noopener noreferrer" className="rounded-md bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground hover:opacity-90">Read whitepaper <span className="sr-only">(Draft v0.3 PDF, opens in a new tab)</span>↗</a>
+              <a href="/whitepapers/native-shareable-soul-packages-v0-3.pdf" download className="rounded-md border border-border px-5 py-3 text-sm font-semibold hover:bg-secondary">Download PDF</a>
             </div>
             <p className="mt-5 text-sm text-muted-foreground">
-              Previous version: <a href="/whitepapers/native-shareable-soul-packages-v0-1.pdf" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Draft v0.1 <span className="sr-only">(PDF, opens in a new tab)</span>↗</a>
+              Previous versions: <a href="/whitepapers/native-shareable-soul-packages-v0-2.pdf" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Draft v0.2 <span className="sr-only">(PDF, opens in a new tab)</span>↗</a>{" · "}<a href="/whitepapers/native-shareable-soul-packages-v0-1.pdf" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Draft v0.1 <span className="sr-only">(PDF, opens in a new tab)</span>↗</a>
             </p>
           </article>
         </div>
