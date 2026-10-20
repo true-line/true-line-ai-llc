@@ -129,8 +129,9 @@ function Index() {
               Version 0.3 clarifies approval and isolation rules, preserves mixed-source provenance, strengthens quarantine and recovery checks, and adds a worked package example with verified hashes.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
-              <a href="/whitepapers/native-shareable-soul-packages-v0-3.pdf" target="_blank" rel="noopener noreferrer" className="rounded-md bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground hover:opacity-90">Read whitepaper <span className="sr-only">(Draft v0.3 PDF, opens in a new tab)</span>↗</a>
-              <a href="/whitepapers/native-shareable-soul-packages-v0-3.pdf" download className="rounded-md border border-border px-5 py-3 text-sm font-semibold hover:bg-secondary">Download PDF</a>
+              <a href="/whitepapers/native-shareable-soul-packages-v0-3.pdf" target="_blank" rel="noopener noreferrer" className="rounded-md bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground hover:opacity-90">Read full paper <span className="sr-only">(Draft v0.3 PDF, opens in a new tab)</span>↗</a>
+              <a href="/whitepapers/native-shareable-soul-packages-v0-3-overview.pdf" target="_blank" rel="noopener noreferrer" className="rounded-md border border-border px-5 py-3 text-sm font-semibold hover:bg-secondary">Two-page overview · Draft v0.3 <span className="sr-only">(PDF, opens in a new tab)</span>↗</a>
+              <a href="/whitepapers/native-shareable-soul-packages-v0-3.pdf" download className="rounded-md border border-border px-5 py-3 text-sm font-semibold hover:bg-secondary">Download full PDF</a>
             </div>
             <p className="mt-5 text-sm text-muted-foreground">
               Previous versions: <a href="/whitepapers/native-shareable-soul-packages-v0-2.pdf" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Draft v0.2 <span className="sr-only">(PDF, opens in a new tab)</span>↗</a>{" · "}<a href="/whitepapers/native-shareable-soul-packages-v0-1.pdf" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Draft v0.1 <span className="sr-only">(PDF, opens in a new tab)</span>↗</a>
