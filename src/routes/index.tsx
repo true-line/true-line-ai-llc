@@ -19,6 +19,7 @@ type Product = { name: string; tag?: string; desc: string; live?: boolean; url?:
 const products: Product[] = [
   { name: "agentsop.ai", desc: "Standard operating procedures for AI agents.", live: true, url: "https://agentsop.ai" },
   { name: "Dudles", tag: "Your agents. Their identities. Any harness.", desc: "A desktop home for autonomous AI agents. Give each agent a persistent identity, its own workspace, tools, and runtimes—then let it work across AI harnesses and providers without losing who it is.", status: "Coming Soon · Private Beta" },
+  { name: "Agent Watchtower", desc: "A clearer view of what your AI agents are doing.", status: "Coming Soon" },
   { name: "Page Alcove", desc: "Save, organize, and revisit the pages that matter." },
   { name: "Code Traverse", desc: "Navigate and map large codebases. Formerly Cartograph." },
   { name: "Diagram Dreamer", desc: "Turn ideas into diagrams with AI." },
