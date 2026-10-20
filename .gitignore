@@ -16,6 +16,13 @@ dist-ssr
 .nitro
 *.local
 
+# Editable whitepaper sources are private; publish PDF copies only.
+*.doc
+*.docx
+*.docm
+*.odt
+*.pages
+
 # Wrangler / Cloudflare
 .wrangler/
 .dev.vars

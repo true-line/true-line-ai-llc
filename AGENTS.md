@@ -8,3 +8,7 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+Whitepaper publication is PDF-only. Editable documents supplied for review are
+private: do not commit, upload, or publish them. A request to review a document
+does not authorize website changes or publication.
