@@ -115,13 +115,21 @@ function Index() {
           <p className="mt-3 max-w-2xl text-muted-foreground">
             Technical perspectives on agentic software, AI workflows, and local models.
           </p>
-          <div className="mt-10 rounded-lg border border-border bg-card p-8">
-            <span className="rounded-full bg-secondary px-2.5 py-0.5 font-mono text-[11px] text-muted-foreground">Coming Soon</span>
-            <h3 className="mt-5 font-display text-xl font-semibold">Whitepapers are on the way</h3>
+          <article className="mt-10 rounded-lg border border-border bg-card p-8">
+            <div className="flex flex-wrap items-center gap-3">
+              <span className="rounded-full bg-secondary px-2.5 py-0.5 font-mono text-[11px] text-muted-foreground">Draft v0.1</span>
+              <p className="text-xs text-muted-foreground"><time dateTime="2026-10-20">October 20, 2026</time> · 33 pages · PDF</p>
+            </div>
+            <h3 className="mt-5 font-display text-xl font-semibold">Native Shareable Soul Packages</h3>
+            <p className="mt-2 text-sm font-medium">A persistent environment for agent identity work and learning</p>
             <p className="mt-3 max-w-2xl text-sm text-muted-foreground">
-              Our whitepapers will be published here as they become available. Check back for practical insights from building and working with AI.
+              A proposed .soul package format for preserving an AI agent’s identity, knowledge, tools, and ongoing work across harnesses and inference providers. Covers portable agent environments, accumulated learning, and explicit operations for backup, transfer, and sharing.
             </p>
-          </div>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <a href="/whitepapers/native-shareable-soul-packages-v0-1.pdf" target="_blank" rel="noopener noreferrer" className="rounded-md bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground hover:opacity-90">Read whitepaper <span className="sr-only">(PDF, opens in a new tab)</span>↗</a>
+              <a href="/whitepapers/native-shareable-soul-packages-v0-1.pdf" download className="rounded-md border border-border px-5 py-3 text-sm font-semibold hover:bg-secondary">Download PDF</a>
+            </div>
+          </article>
         </div>
       </section>
 

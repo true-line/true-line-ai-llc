@@ -17,6 +17,8 @@ export default defineConfig({
     prerender: {
       enabled: true,
       crawlLinks: true,
+      // PDFs are copied from public/ and must not be rendered as app routes.
+      filter: ({ path }: { path: string }) => !/\.pdf$/i.test(path),
       autoStaticPathsDiscovery: true,
       autoSubfolderIndex: true,
       failOnError: true,
