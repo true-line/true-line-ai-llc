@@ -117,6 +117,21 @@ function Index() {
           </p>
           <article className="mt-10 rounded-lg border border-border bg-card p-8">
             <div className="flex flex-wrap items-center gap-3">
+              <span className="rounded-full bg-secondary px-2.5 py-0.5 font-mono text-[11px] text-muted-foreground">Version 0.1</span>
+              <p className="text-xs text-muted-foreground"><time dateTime="2026-10-20">October 20, 2026</time> · 16 pages · PDF</p>
+            </div>
+            <h3 className="mt-5 font-display text-xl font-semibold">Skills as --help</h3>
+            <p className="mt-2 text-sm font-medium">CLI-Native Skill Exposure for Agents</p>
+            <p className="mt-3 max-w-2xl text-sm text-muted-foreground">
+              A proposal for exposing agent skills through a structured, on-demand CLI interface. Agents request summaries, contracts, procedures, and individual references within explicit token budgets, with continuation handles for deeper reading. The design replaces unrestricted skill-file access with a tool-managed skill surface.
+            </p>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <a href="/whitepapers/skills-as-help-v0-1.pdf" target="_blank" rel="noopener noreferrer" className="rounded-md bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground hover:opacity-90">Read full paper <span className="sr-only">(Skills as --help version 0.1 PDF, opens in a new tab)</span>↗</a>
+              <a href="/whitepapers/skills-as-help-v0-1.pdf" download className="rounded-md border border-border px-5 py-3 text-sm font-semibold hover:bg-secondary">Download PDF</a>
+            </div>
+          </article>
+          <article className="mt-10 rounded-lg border border-border bg-card p-8">
+            <div className="flex flex-wrap items-center gap-3">
               <span className="rounded-full bg-secondary px-2.5 py-0.5 font-mono text-[11px] text-muted-foreground">Draft v0.3</span>
               <p className="text-xs text-muted-foreground"><time dateTime="2026-10-20">October 20, 2026</time> · 42 pages · PDF</p>
             </div>
