@@ -37,11 +37,12 @@ const tracks = [
 function Index() {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <header className="mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
+      <header className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-6 px-6 py-6">
         <a href="/" className="font-display text-xl font-bold tracking-tight">True Line <span className="text-primary">AI</span></a>
-        <nav className="flex gap-6 text-sm text-muted-foreground">
+        <nav aria-label="Main navigation" className="flex flex-wrap gap-x-6 gap-y-3 text-sm text-muted-foreground">
           <a href="#software" className="hover:text-foreground">Software</a>
           <a href="#training" className="hover:text-foreground">Training</a>
+          <a href="#whitepapers" className="hover:text-foreground">Whitepapers</a>
           <a href="#about" className="hover:text-foreground">About</a>
           <a href="https://github.com/true-line" className="hover:text-foreground">GitHub</a>
         </nav>
@@ -105,6 +106,22 @@ function Index() {
             I also work with local models on NVIDIA DGX Spark, so sessions can cover running and building against models that stay on your own hardware.
           </p>
           <p className="mt-6 text-sm text-muted-foreground">Formats: half-day workshops, multi-week cohorts, and on-site team sessions.</p>
+        </div>
+      </section>
+
+      <section id="whitepapers" aria-labelledby="whitepapers-heading" className="border-t border-border">
+        <div className="mx-auto max-w-6xl px-6 py-20">
+          <h2 id="whitepapers-heading" className="font-display text-3xl font-bold md:text-4xl">Whitepapers</h2>
+          <p className="mt-3 max-w-2xl text-muted-foreground">
+            Technical perspectives on agentic software, AI workflows, and local models.
+          </p>
+          <div className="mt-10 rounded-lg border border-border bg-card p-8">
+            <span className="rounded-full bg-secondary px-2.5 py-0.5 font-mono text-[11px] text-muted-foreground">Coming Soon</span>
+            <h3 className="mt-5 font-display text-xl font-semibold">Whitepapers are on the way</h3>
+            <p className="mt-3 max-w-2xl text-sm text-muted-foreground">
+              Our whitepapers will be published here as they become available. Check back for practical insights from building and working with AI.
+            </p>
+          </div>
         </div>
       </section>
 
