@@ -170,6 +170,7 @@ function Index() {
       <footer className="border-t border-border">
         <div className="mx-auto flex max-w-6xl flex-wrap justify-between gap-4 px-6 py-8 text-sm text-muted-foreground">
           <span>© {new Date().getFullYear()} True Line AI LLC · Frisco, Texas</span>
+          <a href="/image-trail/privacy" className="hover:text-foreground">Image Trail privacy policy</a>
           <a href="https://github.com/true-line" className="hover:text-foreground">github.com/true-line</a>
         </div>
       </footer>
