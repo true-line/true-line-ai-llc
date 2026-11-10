@@ -14,4 +14,12 @@ describe("App routing", () => {
 
     expect(matches.at(-1)?.routeId).not.toBe(rootRouteId);
   });
+
+  it("matches the Image Trail privacy policy, which the store listing links to", () => {
+    const router = createRouter({ routeTree, context: { queryClient: new QueryClient() } });
+
+    const matches = router.matchRoutes("/image-trail/privacy");
+
+    expect(matches.at(-1)?.routeId).toBe("/image-trail/privacy");
+  });
 });
