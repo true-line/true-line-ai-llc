@@ -18,6 +18,7 @@ type Product = { name: string; tag?: string; desc: string; live?: boolean; url?:
 
 const products: Product[] = [
   { name: "agentsop.ai", desc: "Standard operating procedures for AI agents.", live: true, url: "https://agentsop.ai" },
+  { name: "Image Trail", desc: "Turn the patterns in image URLs into trails you can walk. A Chrome and Brave extension with local pins and encrypted captures.", status: "Prerelease", url: "https://chromewebstore.google.com/detail/kopcjofaojfpgdoianeddagpenhijphi" },
   { name: "Dudles", tag: "Your agents. Their identities. Any harness.", desc: "A desktop home for autonomous AI agents. Give each agent a persistent identity, its own workspace, tools, and runtimes—then let it work across AI harnesses and providers without losing who it is.", status: "Coming Soon · Private Beta" },
   { name: "Agent Watchtower", desc: "A clearer view of what your AI agents are doing.", status: "Coming Soon" },
   { name: "Page Alcove", desc: "Save, organize, and revisit the pages that matter." },
@@ -25,7 +26,6 @@ const products: Product[] = [
   { name: "Diagram Dreamer", desc: "Turn ideas into diagrams with AI." },
   { name: "Codex Rules Editor", desc: "Author and manage rules for coding agents." },
   { name: "Apple TV Agent", desc: "An agent for your living room screen." },
-  { name: "Image Trail", desc: "Track and trace your images." },
   { name: "Overlook", desc: "Overlook — a privacy-first desktop photo library app replacement for Apple Photos." },
   { name: "Local Notes", desc: "A fast, simple, and private notes app that runs entirely in your browser. Capture, edit, and organize notes instantly with local storage—no accounts, no cloud, no backend required. Built with Vite + React + TypeScript for a playful yet minimal desktop experience." },
 ];
