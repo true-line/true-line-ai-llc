@@ -10,11 +10,23 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as InquiryRouteImport } from './routes/inquiry'
+import { Route as BookmarkitPrivacyRouteImport } from './routes/bookmarkit/privacy'
 import { Route as ImageTrailPrivacyRouteImport } from './routes/image-trail/privacy'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const InquiryRoute = InquiryRouteImport.update({
+  id: '/inquiry',
+  path: '/inquiry',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BookmarkitPrivacyRoute = BookmarkitPrivacyRouteImport.update({
+  id: '/bookmarkit/privacy',
+  path: '/bookmarkit/privacy',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ImageTrailPrivacyRoute = ImageTrailPrivacyRouteImport.update({
@@ -25,27 +37,40 @@ const ImageTrailPrivacyRoute = ImageTrailPrivacyRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/inquiry': typeof InquiryRoute
+  '/bookmarkit/privacy': typeof BookmarkitPrivacyRoute
   '/image-trail/privacy': typeof ImageTrailPrivacyRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/inquiry': typeof InquiryRoute
+  '/bookmarkit/privacy': typeof BookmarkitPrivacyRoute
   '/image-trail/privacy': typeof ImageTrailPrivacyRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/inquiry': typeof InquiryRoute
+  '/bookmarkit/privacy': typeof BookmarkitPrivacyRoute
   '/image-trail/privacy': typeof ImageTrailPrivacyRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/image-trail/privacy'
+  fullPaths: '/' | '/inquiry' | '/bookmarkit/privacy' | '/image-trail/privacy'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/image-trail/privacy'
-  id: '__root__' | '/' | '/image-trail/privacy'
+  to: '/' | '/inquiry' | '/bookmarkit/privacy' | '/image-trail/privacy'
+  id:
+    | '__root__'
+    | '/'
+    | '/inquiry'
+    | '/bookmarkit/privacy'
+    | '/image-trail/privacy'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  InquiryRoute: typeof InquiryRoute
+  BookmarkitPrivacyRoute: typeof BookmarkitPrivacyRoute
   ImageTrailPrivacyRoute: typeof ImageTrailPrivacyRoute
 }
 
@@ -56,6 +81,20 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/inquiry': {
+      id: '/inquiry'
+      path: '/inquiry'
+      fullPath: '/inquiry'
+      preLoaderRoute: typeof InquiryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/bookmarkit/privacy': {
+      id: '/bookmarkit/privacy'
+      path: '/bookmarkit/privacy'
+      fullPath: '/bookmarkit/privacy'
+      preLoaderRoute: typeof BookmarkitPrivacyRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/image-trail/privacy': {
@@ -70,6 +109,8 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  InquiryRoute: InquiryRoute,
+  BookmarkitPrivacyRoute: BookmarkitPrivacyRoute,
   ImageTrailPrivacyRoute: ImageTrailPrivacyRoute,
 }
 export const routeTree = rootRouteImport
