@@ -45,6 +45,7 @@ function Index() {
           <a href="#training" className="hover:text-foreground">Training</a>
           <a href="#whitepapers" className="hover:text-foreground">Whitepapers</a>
           <a href="#about" className="hover:text-foreground">About</a>
+          <a href="/inquiry" className="hover:text-foreground">Inquiry</a>
           <a href="https://github.com/true-line" className="hover:text-foreground">GitHub</a>
         </nav>
       </header>
@@ -170,6 +171,8 @@ function Index() {
       <footer className="border-t border-border">
         <div className="mx-auto flex max-w-6xl flex-wrap justify-between gap-4 px-6 py-8 text-sm text-muted-foreground">
           <span>© {new Date().getFullYear()} True Line AI LLC · Frisco, Texas</span>
+          <a href="/inquiry" className="hover:text-foreground">Inquiry</a>
+          <a href="/bookmarkit/privacy" className="hover:text-foreground">BookmarkIt privacy policy</a>
           <a href="/image-trail/privacy" className="hover:text-foreground">Image Trail privacy policy</a>
           <a href="https://github.com/true-line" className="hover:text-foreground">github.com/true-line</a>
         </div>
